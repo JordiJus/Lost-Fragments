@@ -40,5 +40,7 @@ public class TerrainTerraforming : MonoBehaviour
         }
 
         terrainData.SetHeights(x - digSize / 2, z - digSize / 2, heights);
+
+        terrain.GetComponent<TerrainCollider>().terrainData = terrain.terrainData;
     }
 }
