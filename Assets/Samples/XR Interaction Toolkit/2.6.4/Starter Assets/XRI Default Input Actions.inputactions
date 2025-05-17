@@ -1577,6 +1577,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "BButton",
+                    "type": "Button",
+                    "id": "eb2a4fba-007b-4507-8cfb-7ddc7d5e43cc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1742,6 +1751,17 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "Generic XR Controller",
                     "action": "Scale Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7bd2a17e-7c0c-40d8-8fb8-9cc681f3dc67",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -2728,6 +2748,54 @@
                     "action": "Touch Release",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "XRI BookControl",
+            "id": "b67945fe-fc8f-4624-88c4-3f2ea5ca4547",
+            "actions": [
+                {
+                    "name": "PageBack",
+                    "type": "Button",
+                    "id": "51f24aeb-6266-4082-8453-994eab91ce76",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PageForward",
+                    "type": "Button",
+                    "id": "6d2c06b4-b31e-476c-91a0-2d5d66c9ca28",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d3cb5aad-a36e-4086-ba10-8e66f5ce6052",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "PageBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ed508454-64de-42a1-ba38-861e15f27610",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "PageForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
