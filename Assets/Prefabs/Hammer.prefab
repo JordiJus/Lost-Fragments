@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -2017969734584464891}
   - component: {fileID: 8360679895172915184}
   - component: {fileID: 1995361831335985230}
+  - component: {fileID: -3221225368836676034}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1919472813478786015}
+  - {fileID: 5210080458243410026}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -284,7 +285,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04783316, y: 0.3570482, z: 0.14572223}
   m_Center: {x: -0.00011325721, y: 0.09474603, z: 0.016277581}
---- !u!1 &6096888581675506556
+--- !u!114 &-3221225368836676034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5098605816110596462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d57c597be9e70d4686f579c6d48f5d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+--- !u!1 &7162046517193966002
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -292,25 +306,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1919472813478786015}
-  - component: {fileID: 6350342343244492977}
-  - component: {fileID: 1236245520132827851}
-  - component: {fileID: 3490466430654977275}
+  - component: {fileID: 5210080458243410026}
+  - component: {fileID: 5941716842957838865}
+  - component: {fileID: 6015491273778863532}
+  - component: {fileID: 5817531304262318194}
   m_Layer: 0
-  m_Name: TipHammer
+  m_Name: 'TipHammer '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1919472813478786015
+--- !u!4 &5210080458243410026
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6096888581675506556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 7162046517193966002}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -318,26 +332,45 @@ Transform:
   m_Father: {fileID: 3981496068803667848}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6350342343244492977
+--- !u!114 &5941716842957838865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162046517193966002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08163ca107ef3b6428d411d641c02d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  terrainDig: {fileID: 0}
+  pickaxeRb: {fileID: 0}
+  controller: {fileID: 0}
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
+  speedThreshold: 1
+  terrainTag: Terrain
+--- !u!65 &6015491273778863532
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6096888581675506556}
+  m_GameObject: {fileID: 7162046517193966002}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.05404515, y: 0.047990233, z: 0.082694836}
   m_Center: {x: -0.00017523766, y: 0.24826519, z: 0.05655816}
---- !u!54 &1236245520132827851
+--- !u!54 &5817531304262318194
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6096888581675506556}
+  m_GameObject: {fileID: 7162046517193966002}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -347,19 +380,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3490466430654977275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6096888581675506556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08163ca107ef3b6428d411d641c02d65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  terrainDig: {fileID: 8360679895172915184}
-  pickaxeRb: {fileID: -5659364550798790226}
-  speedThreshold: 1.5
-  terrainTag: Terrain

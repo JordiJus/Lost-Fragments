@@ -2798,6 +2798,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "XRI ToolBelt",
+            "id": "8fbdae6b-3b4d-45a6-819f-5dfd31a17bca",
+            "actions": [
+                {
+                    "name": "OpenToolbelt",
+                    "type": "Button",
+                    "id": "d6fc9800-9862-4ad4-959c-183830260d0e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "017edf00-6a92-4985-ac50-0f253d0adc44",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenToolbelt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

@@ -24,12 +24,11 @@ public class PageUI : MonoBehaviour
     public void DisplayPage(BookPage page)
     {
         currentPage = page;
-
         if (page.isLocked)
 {
             // Show locked message only
             pageText.text = page.lockedText;
-            if (pageImage != null) pageImage.sprite = null;
+            
             choicePanel.SetActive(false);
             if (choiceText != null) choiceText.gameObject.SetActive(false);
             return;
@@ -37,7 +36,6 @@ public class PageUI : MonoBehaviour
         
         pageText.text = "";
         choiceText.text = "";
-        if (pageImage != null) pageImage.sprite = null;
         
 
         // Clear old buttons
@@ -65,8 +63,16 @@ public class PageUI : MonoBehaviour
         }
         else
         {
-            // Show result content
-            ShowChoiceResult();
+            if (page.isChoicePage)
+            {
+                // Show result content
+                ShowChoiceResult();
+            }
+            else
+            {
+                pageText.text = currentPage.pageText;
+            }
+            
         }
     }
 
