@@ -11,6 +11,8 @@ public class BookManager : MonoBehaviour
     public int currentPage = 0;
 
     private List<BookPage> runtimePages = new();
+    public AudioSource pageSound;
+    public AudioClip writeSound;
 
     void Start()
     {
@@ -64,6 +66,9 @@ public class BookManager : MonoBehaviour
     
     public void UnlockPage(int index)
     {
+        
+        pageSound.PlayOneShot(writeSound);
+        
         if (index >= 0 && index < runtimePages.Count)
         {
             runtimePages[index].isLocked = false;

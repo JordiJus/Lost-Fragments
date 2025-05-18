@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29286870427bd574ca89afba128e57a5, type: 3}
+  m_Name: P12 - PostPuzzle
+  m_EditorClassIdentifier: 
+  pageText: Qui es la persona enterrada?
+  choiceText: 
+  pageImage: {fileID: 0}
+  isChoicePage: 1
+  choices:
+  - Un home
+  - Una dona
+  - "Una persona no bin\xE0ria"
+  choiceResults:
+  - "Tot hi haver-hi senyals d'haver-hi parts del que podria ser un vestit, realment
+    res treu el fet que tamb\xE9 hi ha una espasa. Amb aix\xF2 arribo a la conclusi\xF3
+    que la persona entarrada seria un home."
+  - Per molt que trobem una espasa, hi han clars indicis que hi havia un vestit i
+    robes cares, i l'espasa es podria tractar d'un artefacte cerimonial. Per tant
+    la persona entarrada es una dona.
+  - "Trobem moltes senyals ambig\xFCes al enterrament, i aix\xF2 ens indica una persona
+    que podria estar participant en els dos rols de g\xE8nere, i tot no saber com
+    es podria indentificar, ho podriem considerar una persona no bin\xE0ria."
+  targetChoiceIndex: -1
+  isLocked: 1
+  lockedText: To be discovered...

@@ -16,7 +16,7 @@ MonoBehaviour:
     moguda per una persona podria indicar que es tracta d'una persona important.
     La tomba es al mig del tumul segons els mapas que vaig trobar a l'oficina."
   choiceText: 
-  pageImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  pageImage: {fileID: 0}
   isChoicePage: 0
   choices: []
   choiceResults: []

@@ -308,8 +308,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1356656965652084346}
   - component: {fileID: 8672444731895078888}
-  - component: {fileID: 8542573817748953773}
   - component: {fileID: 6861670111727495052}
+  - component: {fileID: 8542573817748953773}
   m_Layer: 0
   m_Name: TipPickaxe
   m_TagString: Untagged
@@ -351,6 +351,19 @@ MonoBehaviour:
   hapticDuration: 0.1
   speedThreshold: 1
   terrainTag: Terrain
+--- !u!65 &6861670111727495052
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4397850520543086213}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.075018264, y: 0.11437362, z: 0.47299996}
+  m_Center: {x: 0.00033993626, y: 0.40885475, z: -0.0006583576}
 --- !u!54 &8542573817748953773
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -367,16 +380,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6861670111727495052
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4397850520543086213}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.075018264, y: 0.11437362, z: 0.47299996}
-  m_Center: {x: 0.00033993626, y: 0.40885475, z: -0.0006583576}

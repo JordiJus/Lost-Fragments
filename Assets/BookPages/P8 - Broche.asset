@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29286870427bd574ca89afba128e57a5, type: 3}
-  m_Name: P2 - INTRO
+  m_Name: P8 - Broche
   m_EditorClassIdentifier: 
-  pageText: "Procedir\xE9 a fer una excavaci\xF3 per intentar entendre les intencions
-    de CIS, i poder interpretar el que va passar de veritat. Segons faci descobriments
-    anir\xE9 anotant tot en aquest diari d'excavaci\xF3."
+  pageText: 'He pogut trobar un fermall ovalat al cos, el que acostuma trobar-se
+    a enterraments femeninis de la epoca, al formar part de vestits tradicionals. '
   choiceText: 
   pageImage: {fileID: 0}
   isChoicePage: 0
   choices: []
   choiceResults: []
   targetChoiceIndex: -1
-  isLocked: 0
+  isLocked: 1
   lockedText: To be discovered...

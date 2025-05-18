@@ -33,7 +33,7 @@ public class PickaxeTrigger : MonoBehaviour
 
         float speed = velocity.magnitude;
         
-        Debug.Log(speed);
+        Debug.Log("Eina velocitat: " + pickaxeRb.velocity.magnitude);
         if (speed >= speedThreshold)
         {
             terrainDig.Terraform(transform.position); // Use tip's position

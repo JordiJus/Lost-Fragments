@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29286870427bd574ca89afba128e57a5, type: 3}
-  m_Name: Page6
+  m_Name: P9 - Collaret
   m_EditorClassIdentifier: 
-  pageText: Y por ultimo la 6
+  pageText: "Certes restes del enterrament mostren que es podria tractar d'una persona
+    rica, que es pot veure tamb\xE9 amb restes de fibres que podrien tractar-se de
+    robes de alta qualitat de la epoca."
+  choiceText: 
   pageImage: {fileID: 0}
   isChoicePage: 0
   choices: []
-  jumpToPageIfSelected: 
-  alwaysVisible: 1
+  choiceResults: []
+  targetChoiceIndex: -1
+  isLocked: 1
+  lockedText: To be discovered...

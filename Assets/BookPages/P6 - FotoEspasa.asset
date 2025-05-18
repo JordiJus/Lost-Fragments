@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29286870427bd574ca89afba128e57a5, type: 3}
-  m_Name: Page4
+  m_Name: P6 - FotoEspasa
   m_EditorClassIdentifier: 
-  pageText: Algo funciona pag 4?
-  pageImage: {fileID: 0}
+  pageText: 
+  choiceText: 
+  pageImage: {fileID: 21300000, guid: 709179cb8f12a5a4782b542707423d80, type: 3}
   isChoicePage: 0
   choices: []
-  jumpToPageIfSelected: 
-  alwaysVisible: 1
+  choiceResults: []
+  targetChoiceIndex: -1
+  isLocked: 0
+  lockedText: To be discovered...

@@ -28,6 +28,8 @@ public class PageUI : MonoBehaviour
 {
             // Show locked message only
             pageText.text = page.lockedText;
+            pageImage.sprite = null;
+            pageImage.color = new Color(1, 1, 1, 0); // oculta imatge
             
             choicePanel.SetActive(false);
             if (choiceText != null) choiceText.gameObject.SetActive(false);
@@ -36,6 +38,17 @@ public class PageUI : MonoBehaviour
         
         pageText.text = "";
         choiceText.text = "";
+
+        if (page.pageImage != null && pageImage != null)
+        {
+            pageImage.sprite = page.pageImage;
+            pageImage.color = Color.white; // mostra la imatge (per si estava en transparent)
+        }
+        else if (pageImage != null)
+        {
+            pageImage.sprite = null;
+            pageImage.color = new Color(1, 1, 1, 0); // oculta imatge
+        }
         
 
         // Clear old buttons

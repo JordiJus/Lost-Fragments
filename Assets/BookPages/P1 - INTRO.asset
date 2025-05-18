@@ -17,7 +17,7 @@ MonoBehaviour:
     enterrar, i que l'organitzaci\xF3 CIS (Creuada per la Integritat Sagrada) volia
     esborrar de la hist\xF2ria."
   choiceText: 
-  pageImage: {fileID: 21300000, guid: e45f8f823c093d941855bb23b53b9414, type: 3}
+  pageImage: {fileID: 0}
   isChoicePage: 0
   choices: []
   choiceResults: []

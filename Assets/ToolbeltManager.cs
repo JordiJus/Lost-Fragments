@@ -82,8 +82,9 @@ public class ToolbeltManager : MonoBehaviour
         flatForward.y = 0;
         flatForward.Normalize();
 
+        
         transform.position = cam.transform.position + flatForward * 0.5f - new Vector3(0, 0.4f, 0);
-        transform.rotation = Quaternion.LookRotation(flatForward);
+        transform.rotation = Quaternion.LookRotation(flatForward) * Quaternion.Euler(0, 180f, 0);
     }
 
     public void OnToolTaken(GameObject tool)
