@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: P12 - PostPuzzle
   m_EditorClassIdentifier: 
   pageText: Qui es la persona enterrada?
-  choiceText: 
+  choiceText: Qui es la persona enterrada?
   pageImage: {fileID: 0}
   isChoicePage: 1
   choices:
   - Un home
   - Una dona
-  - "Una persona no bin\xE0ria"
+  - "Persona no bin\xE0ria"
   choiceResults:
   - "Tot hi haver-hi senyals d'haver-hi parts del que podria ser un vestit, realment
     res treu el fet que tamb\xE9 hi ha una espasa. Amb aix\xF2 arribo a la conclusi\xF3

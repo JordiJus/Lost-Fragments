@@ -2811,6 +2811,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "RestartPlayerPos",
+                    "type": "Button",
+                    "id": "7e7b56c4-fbd5-4957-90da-cd71d88bffa3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -2822,6 +2831,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "OpenToolbelt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b789213-49da-4836-be32-0467f5f75666",
+                    "path": "<XRController>{LeftHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RestartPlayerPos",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

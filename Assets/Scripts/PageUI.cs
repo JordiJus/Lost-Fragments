@@ -25,7 +25,7 @@ public class PageUI : MonoBehaviour
     {
         currentPage = page;
         if (page.isLocked)
-{
+        {
             // Show locked message only
             pageText.text = page.lockedText;
             pageImage.sprite = null;
@@ -68,10 +68,12 @@ public class PageUI : MonoBehaviour
 
                 btn.onClick.AddListener(() =>
                 {
+                    Debug.Log("Listeners: " + btn.onClick.GetPersistentEventCount());
                     page.targetChoiceIndex = choiceIndex;
                     choiceText.text = "";
                     ShowChoiceResult();
                 });
+                Debug.Log("Listeners: " + btn.onClick.GetPersistentEventCount());
             }
         }
         else
